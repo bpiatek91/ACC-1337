@@ -4,7 +4,7 @@
 #include "radiusClacHeader.hpp"
 using namespace std; 
 string choice, again; 
-int number, a; 
+int number; 
 int main(){
 	Circle X; 
 	cout<<"Welcome to the Circle Calculator!\n"; 
@@ -14,7 +14,7 @@ int main(){
 		cout<<"What is the radius of the circle?: "; 
 		cin>>number;
 	 
-		cout<<"Would you like to find the area, perimeter, or both?: "; 
+		cout<<"Would you like to find the area, perimeter, or both?(a/p/b): "; 
 		cin>>choice; 
 		if (choice == "a"){
 			X.area(number); 
