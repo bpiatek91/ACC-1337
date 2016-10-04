@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cmath>
-#include "C:\Users\Brett\Documents\COSC1337\classRadiusCaluculator\radiusClacHeader.hpp"
+#include "radiusClacHeader.hpp"
 using namespace std; 
 string choice, again; 
 int number, a; 
