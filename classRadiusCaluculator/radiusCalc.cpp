@@ -26,6 +26,9 @@ int main(){
 	 		X.area(number); 
 	 		X.perimeter(number); 
 		}
+		else {
+			cout<<"Please enter a valid option.\n"; 
+		}
 		cout<<"Would you like to continue? (y/n): " ; 
 		cin>> again; 
 		if (again == "n"){
