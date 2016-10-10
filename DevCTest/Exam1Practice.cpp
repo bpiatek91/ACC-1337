@@ -1,6 +1,6 @@
 #include<iostream>
 #include<string>
-#include "C:\Users\Brett\Documents\COSC1337\DevCTest\helpingHands.hpp"
+#include "helpingHands.hpp"
 using namespace std; 
 int x = 5; 
 int y = 10; 
