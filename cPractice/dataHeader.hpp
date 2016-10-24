@@ -1,15 +1,17 @@
 #include <iostream>
 #include <string>
-#include "deeper.cpp"
+#include "dataSource.cpp"
 using namespace std; 
 
-class friendship{
-	public: 
-	deepest p; 
-	int brett(int x){
-		int y = x+5; 
-		if (y=5){
-			p.deeper(); 
-		} 
-	}
-}; 
+int main(){
+	int x,y,z; 
+	friendship p; 
+	cout<<"Please enter 2 numbers: \nNumber1"; 
+	cin>>x; 
+	cout<<"Please enter the second number: \n";
+	cin>>y; 
+	int outcome = p.buddies(x,y); 
+	cout<<outcome; 
+	return 0; 
+	
+}
