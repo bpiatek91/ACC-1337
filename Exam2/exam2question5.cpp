@@ -1,26 +1,54 @@
+/*
+Brett Piatek
+11/6/16
+COSC 1337
+Exam 2 Question 5
+*/
+
 #include <iostream>
 #include <iomanip>
 #include <string>
 
 using namespace std; 
 
-string DecimaltoRoman(int b);
+int DecimaltoRoman(int a);
 
 int main(){
-	int decimal;
+	int input;
+	string choice; 
 	while (1==1){
 		cout<<"Please enter a decimal number: "; 
-		cin>>decimal; 
-		DecimaltoRoman(decimal);
-		if(decimal<0){
+		cin>>input; 
+		if(input<0){
+			cout<<"This cannot be less than zero.";
 			break;
 		}
+		DecimaltoRoman(input);
+		cout<<"Would you like to go again? (y/n)"; 
+		cin>>choice; 
+		if(choice == "n"){
+			break; 
+		}	
 	}
 }
 
-string DecimaltoRoman(int b){
+int DecimaltoRoman(int a){
+	int i = 0;
 	const int num = 13; 
-	int value [num] = {1,4,5,9,10,40,50,90,100,400,500,900,1000}; 
-	string symbol [num] = {"I","IV","V","IX","X","XL","L","XC","C","CD","D","CM","M"}; 
-	cout<<"Working";
+	int value [num] = {1000,900,500,400,100,90,50,40,10,9,5,4,1}; 
+	string symbol [num] = {"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
+	while (a>0){
+		for (i = 0; i<13; i++){
+			if(a>=value[i]){
+				cout<<symbol[i];
+				a = a- value[i];
+				i = 0;
+				if(a==0){
+					cout<<"\n";
+					break;
+				}
+			}
+		}	
+	}
 }
+
