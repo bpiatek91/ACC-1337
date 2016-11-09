@@ -38,10 +38,10 @@ int DecimaltoRoman(int a){
 	int value [num] = {1000,900,500,400,100,90,50,40,10,9,5,4,1}; 
 	string symbol [num] = {"M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"};
 	while (a>0){
-		for (i = 0; i<13; i++){
+		for (i = 0; i<num; i++){
 			if(a>=value[i]){
 				cout<<symbol[i];
-				a = a- value[i];
+				a -= value[i];
 				i = 0;
 				if(a==0){
 					cout<<"\n";
